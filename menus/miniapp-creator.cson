@@ -1,0 +1,30 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle miniapp-creator'
+      'command': 'miniapp-creator:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'miniapp-creator'
+      'submenu': [
+        {
+          'label': 'New App'
+          'command': 'miniapp-creator:new-app'
+        },
+        {
+          'label': 'New Script'
+          'command': 'miniapp-creator:new-script'
+        },
+        {
+          'label': 'Toggle'
+          'command': 'miniapp-creator:toggle'
+        }
+      ]
+    ]
+  }
+]
